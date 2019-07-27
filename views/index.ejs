@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/style.css">
+  <title></title>
+</head>
+
+<body>
+  <section class="wantToSee">
+    <p class="count"></p>
+    <div>
+      <h2>Scores</h2>
+
+    </div>
+    <ul class="pointTracker">
+      <% for(var i=0; i<pointTracker.length; i++) {%>
+      <li class="pointTracker">
+        <span><%= pointTracker[i].name %></span>
+        <span><%= pointTracker[i].points %></span>
+        <button type="button" name="button" class="change">NewAmt<%= pointTracker[i].buttonColor %></button>
+        <button class="delete">remove</button>
+      </li>
+      <% } %>
+    </ul>
+    <form action="/quotes" method="POST">
+      <input type="text" placeholder="name" name="name">
+
+      <button type="submit">Submit</button>
+    </form>
+    <img class="win" src="" alt="">
+  </section>
+
+
+
+
+  <section>
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair1">
+      <section class="image"></section>
+    </section>
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair1">
+      <section class="image"></section>
+    </section>
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair2">
+      <section class="image"></section>
+    </section>
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair2">
+      <section class="image"></section>
+    </section>
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair3">
+      <section class="image"></section>
+    </section>
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair3">
+      <section class="image"></section>
+    </section>
+
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair4">
+      <section class="image"></section>
+    </section>
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair4">
+      <section class="image"></section>
+    </section>
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair5">
+      <section class="image"></section>
+    </section>
+
+    <section class="cardDeck">
+      <img src="logocopy.png" alt="" class="pair5">
+      <section class="image"></section>
+    </section>
+  </section>
+  <button type="button" name="button" class="reset">Reset Game</button>
+
+  <script type="text/javascript" src="main.js">
+
+  </script>
+</body>
+
+</html>
